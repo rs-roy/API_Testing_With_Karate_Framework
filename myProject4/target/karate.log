@@ -1,0 +1,43 @@
+20:24:25.600 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @extended
+20:24:26.525 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:24:26.530 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:24:27.566 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:27.940 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Content-Type: application/soap+xml; charset=utf-8
+1 > Content-Length: 322
+1 > Host: www.dneonline.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+<soap12:Envelope xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap12:Body>
+    <Add xmlns="http://tempuri.org/">
+      <intA>10</intA>
+      <intB>5</intB>
+    </Add>
+  </soap12:Body>
+</soap12:Envelope>
+
+20:24:28.371 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: application/soap+xml; charset=utf-8
+1 < Server: Microsoft-IIS/10.0
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+1 < X-Powered-By-Plesk: PleskWin
+1 < Date: Fri, 08 Nov 2024 19:24:26 GMT
+1 < Content-Length: 324
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>15</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+20:24:28.371 [pool-2-thread-1] INFO  com.intuit.karate - [print] 
+ <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <AddResponse xmlns="http://tempuri.org/">
+      <AddResult>15</AddResult>
+    </AddResponse>
+  </soap:Body>
+</soap:Envelope>
+ 
+20:24:28.946 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:mydemoapp/features/soapExtended.feature
