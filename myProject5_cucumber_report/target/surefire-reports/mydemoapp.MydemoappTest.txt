@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: mydemoapp.MydemoappTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.87 s <<< FAILURE! - in mydemoapp.MydemoappTest
+mydemoapp.MydemoappTest.testParallel  Time elapsed: 7.841 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 200, expected: 201, response time in milliseconds: 2528, url: http://www.dneonline.com/calculator.asmx, response: 
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>15</AddResult></AddResponse></soap:Body></soap:Envelope>
+classpath:mydemoapp/features/soapExtended.feature:13 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at mydemoapp.MydemoappTest.testParallel(Runner.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,8 +1,8 @@
-13:14:39.232 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-13:14:39.248 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-13:14:40.733 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-13:14:40.733 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-13:14:41.285 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+19:04:10.615 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:04:10.624 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+19:04:11.859 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:04:11.859 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:04:12.413 [pool-2-thread-2] DEBUG com.intuit.karate - request:
 1 > POST http://www.dneonline.com/calculator.asmx
 1 > Content-Type: application/soap+xml; charset=utf-8
 1 > Content-Length: 322
@@ -19,7 +19,7 @@
   </soap12:Body>
 </soap12:Envelope>
 
-13:14:41.285 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+19:04:12.413 [pool-2-thread-1] DEBUG com.intuit.karate - request:
 1 > POST https://www.dataaccess.com/webservicesserver/numberconversion.wso
 1 > SOAPAction: MySoapRequest
 1 > Content-Type: text/xml; charset=UTF-8
@@ -36,7 +36,7 @@
   </soap:Body>
 </soap:Envelope>
 
-13:14:42.757 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1469
+19:04:14.951 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2528
 1 < 200
 1 < Cache-Control: private, max-age=0
 1 < Content-Type: application/soap+xml; charset=utf-8
@@ -44,20 +44,16 @@
 1 < X-AspNet-Version: 2.0.50727
 1 < X-Powered-By: ASP.NET
 1 < X-Powered-By-Plesk: PleskWin
-1 < Date: Tue, 11 Feb 2025 12:14:42 GMT
+1 < Date: Tue, 11 Feb 2025 18:04:14 GMT
 1 < Content-Length: 324
 <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>15</AddResult></AddResponse></soap:Body></soap:Envelope>
 
-13:14:42.767 [pool-2-thread-2] INFO  com.intuit.karate - [print] 
- <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <soap:Body>
-    <AddResponse xmlns="http://tempuri.org/">
-      <AddResult>15</AddResult>
-    </AddResponse>
-  </soap:Body>
-</soap:Envelope>
- 
-13:14:43.121 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1820
+19:04:14.975 [pool-2-thread-2] ERROR com.intuit.karate - classpath:mydemoapp/features/soapExtended.feature:13
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 2528, url: http://www.dneonline.com/calculator.asmx, response: 
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>15</AddResult></AddResponse></soap:Body></soap:Envelope>
+classpath:mydemoapp/features/soapExtended.feature:13
+19:04:15.333 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2915
 1 < 200
 1 < Cache-Control: private, max-age=0
 1 < Content-Type: text/xml; charset=utf-8
@@ -71,7 +67,7 @@
 1 < Strict-Transport-Security: max-age=15768000;includeSubdomains
 1 < X-Content-Type-Options: nosniff
 1 < Permissions-Policy: interest-cohort=(); fullscreen=(self)
-1 < Date: Tue, 11 Feb 2025 12:14:42 GMT
+1 < Date: Tue, 11 Feb 2025 18:04:14 GMT
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
@@ -81,7 +77,7 @@
   </soap:Body>
 </soap:Envelope>
 
-13:14:43.121 [pool-2-thread-1] INFO  com.intuit.karate - [print] 
+19:04:15.333 [pool-2-thread-1] INFO  com.intuit.karate - [print] 
  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     
   <soap:Body>
@@ -96,7 +92,7 @@
   
 </soap:Envelope>
  
-13:14:43.155 [pool-2-thread-1] INFO  com.intuit.karate - [print] 
+19:04:15.369 [pool-2-thread-1] INFO  com.intuit.karate - [print] 
 Converted $ value is:  thirty nine dollars 
-13:14:43.998 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:mydemoapp/features/soapBasic.feature
-13:14:44.085 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:mydemoapp/features/soapExtended.feature
+19:04:16.054 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:mydemoapp/features/soapBasic.feature
+19:04:16.174 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:mydemoapp/features/soapExtended.feature

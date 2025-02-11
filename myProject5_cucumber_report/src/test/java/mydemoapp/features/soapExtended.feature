@@ -10,6 +10,6 @@ Feature: test script with request/response files with soap 1.2
     And header Content-Type = 'application/soap+xml; charset=utf-8'
     # in soap 1.2 'method keyword' is used instead of 'soap action'
     When method post
-    Then status 201
+    Then status 200
     * print '\n', response
     And match response == read('classpath:/mydemoapp/resources/response.xml')

@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,12 +49,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-02-11 01:14:43 PM</div>
+    <div>2025-02-11 07:04:16 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:7]"><span>[1:7]</span> <span>add operation with soap 1.2 format from external file</span></a>
           </div>
         </div>
@@ -80,8 +80,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2012</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3071</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,7 +104,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;http://www.dneonline.com/calculator.asmx&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -113,7 +113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:14:40.736 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">19:04:11.862 karate.env system property was: null 
 </div>   
 
   
@@ -140,7 +140,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request read(&#39;classpath:/mydemoapp/resources/request.xml&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">24</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -203,7 +203,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1953</div>
+    <div class="time-cell passed">3030</div>
   </div>
 
    
@@ -212,7 +212,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">13:14:41.285 request:
+  <div class="preformatted" data-parent="0.12">19:04:12.418 request:
 1 &gt; POST http://www.dneonline.com/calculator.asmx
 1 &gt; Content-Type: application/soap+xml; charset=utf-8
 1 &gt; Content-Length: 322
@@ -229,7 +229,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   &lt;/soap12:Body&gt;
 &lt;/soap12:Envelope&gt;
 
-13:14:42.757 response time in milliseconds: 1469
+19:04:14.951 response time in milliseconds: 2528
 1 &lt; 200
 1 &lt; Cache-Control: private, max-age=0
 1 &lt; Content-Type: application/soap+xml; charset=utf-8
@@ -237,7 +237,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-AspNet-Version: 2.0.50727
 1 &lt; X-Powered-By: ASP.NET
 1 &lt; X-Powered-By-Plesk: PleskWin
-1 &lt; Date: Tue, 11 Feb 2025 12:14:42 GMT
+1 &lt; Date: Tue, 11 Feb 2025 18:04:14 GMT
 1 &lt; Content-Length: 324
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;soap:Body&gt;&lt;AddResponse xmlns=&quot;http://tempuri.org/&quot;&gt;&lt;AddResult&gt;15&lt;/AddResult&gt;&lt;/AddResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
 
@@ -254,13 +254,46 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref failed">13</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">19:04:14.976 classpath:mydemoapp/features/soapExtended.feature:13
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 2528, url: http://www.dneonline.com/calculator.asmx, response: 
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;soap:Body&gt;&lt;AddResponse xmlns=&quot;http://tempuri.org/&quot;&gt;&lt;AddResult&gt;15&lt;/AddResult&gt;&lt;/AddResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+classpath:mydemoapp/features/soapExtended.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;\n&#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -281,51 +314,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print &#39;\n&#39;, response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">7</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.14">13:14:42.769 [print] 
- &lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-  &lt;soap:Body&gt;
-    &lt;AddResponse xmlns=&quot;http://tempuri.org/&quot;&gt;
-      &lt;AddResult&gt;15&lt;/AddResult&gt;
-    &lt;/AddResponse&gt;
-  &lt;/soap:Body&gt;
-&lt;/soap:Envelope&gt;
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+      <div class="step-ref skipped">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response == read(&#39;classpath:/mydemoapp/resources/response.xml&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
